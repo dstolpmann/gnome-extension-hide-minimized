@@ -34,7 +34,7 @@ export default class HideMinimized {
       return show && !meta.minimized;
     };
 
-    WindowCyclerPopup.prototype._getWindows = function {
+    WindowCyclerPopup.prototype._getWindows = function() {
       _filterWindows(windowGetWindows.bind(this)());
     };
 
